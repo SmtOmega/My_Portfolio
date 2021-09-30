@@ -1,0 +1,29 @@
+.policy-container {
+    width: 1200px;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+.policy-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.policy-container p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.policy-container p strong {
+    margin-left: .2rem;
+    color: rgb(255, 115, 0);
+}
+.policy-container h2, .policy-container h3 {
+    color: rgb(255, 115, 0);
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px){
+    .policy-container{
+        width: 90vw
+    };
+}

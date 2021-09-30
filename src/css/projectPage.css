@@ -1,0 +1,48 @@
+.projectPage-card-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 400px;
+    
+}
+.search-form input {
+    width: 100%;
+    padding: .8rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 4px 10px rgba(122, 114, 114, 0.6);
+}
+.search-icon {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(255, 115, 0);
+
+}
+
+@media screen and (max-width: 768px) {
+    .form-container{
+        justify-content: center;
+    }
+    .search-form {
+        width: 90vw;
+    }.projectPage-card-container {
+        width: 90vw;
+    }
+    
+}

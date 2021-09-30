@@ -1,0 +1,87 @@
+
+
+.about-page-container {
+    width: 1200px;
+    margin: 10rem auto;
+    
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+.about-page-left-section {
+    width: 50%;
+}
+.my_name {
+    
+    font-size: 1.5rem;
+    background-color: rgb(15, 15, 15);
+    padding: 1px 10px;
+    margin-left: 5px;
+}
+.about-page-left-section > p {
+    padding: 5px;
+}
+.about-page-right-section{
+    width: 45%;
+}
+.about-page-right-section img {
+    width: 90%;
+    border: 2px solid #fff;
+}
+
+.skills-section {
+    margin: 5rem 0;
+    
+}
+
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 1rem;
+}
+.skills-items {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.skills-items > div {
+    background: rgb(15, 15, 15);
+    padding: 0 1rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+.about-page-container {
+    width: 90vw;
+    }
+.top-section {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem
+    }
+.about-page-right-section {
+    width: 100%;
+}
+.about-page-left-section{
+    width: 100%;
+    text-align: center;
+}
+.about-page-right-section img {
+    width: 100%;
+}
+.skills-section {
+    text-align: center;
+}
+.skills {
+    flex-direction: column;
+    gap: 1rem
+}
+.skills-items {
+    gap: .5rem
+}
+}
