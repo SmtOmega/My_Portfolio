@@ -24,6 +24,7 @@
 }
 @media screen and (max-width: 768px){
     .policy-container{
-        width: 90vw
+        width: 90vw;
+        text-align: center
     };
 }
