@@ -51,7 +51,7 @@ const PrivacyPolicyPage = () => {
         purposes. also collected data are used by partners that are part of the{" "}
         <a
           href="https://iabtechlab.com/working-groups/open-measurement-working"
-          target="_blank"
+          target="_blank" rel='noreferrer'
         >
           Open Measurement Working Group
         </a>
