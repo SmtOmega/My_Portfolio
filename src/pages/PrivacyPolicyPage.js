@@ -1,9 +1,8 @@
-import '../css/Policy.css'
-
+import "../css/Policy.css";
 
 const PrivacyPolicyPage = () => {
   return (
-    <div className='policy-container'>
+    <div className="policy-container">
       <h1>Privacy Policy</h1>
       <p>
         This Privacy Policy applies to All Our Apps and Websites. The
@@ -43,6 +42,22 @@ const PrivacyPolicyPage = () => {
         accept or refuse these cookies and know when a cookie is being sent to
         your device. If you choose to refuse our cookies, you may not be able to
         use some portions of this Service.
+      </p>
+
+      <h2>ADVERTISING</h2>
+      <p>
+        Our App contains monitization SDK, this SDK owned by a third party
+        advertiser collect and process service Data for personalized advertising
+        purposes. also collected data are used by partners that are part of the{" "}
+        <a
+          href="https://iabtechlab.com/working-groups/open-measurement-working"
+          target="_blank"
+        >
+          Open Measurement Working Group
+        </a>
+        to perform ad measurement and other services example of this advertiser
+        SDK use in our app is the Mopub SDK own by twitter, the Facebook
+        Audience Network SDK own by Facebook and others.
       </p>
       <h2>INFORMATION SECURITY</h2>
       <p>
