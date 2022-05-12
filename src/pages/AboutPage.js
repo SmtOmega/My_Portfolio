@@ -1,8 +1,11 @@
 import myPix2 from "../assets/images/myPix2.jpg";
+import FooterSection from "../components/FooterSection";
+import NavMenu from "../components/NavMenu";
 import "../css/AboutPage.css";
 const AboutPage = () => {
   return (
     <div>
+      <NavMenu />
       <div className="about-page-container">
         <section className="top-section">
           <div className="about-page-left-section">
@@ -66,6 +69,7 @@ const AboutPage = () => {
           </article>
         </section>
       </div>
+      <FooterSection />
     </div>
   );
 };

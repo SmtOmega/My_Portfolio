@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { MdClose, MdMenu } from "react-icons/md";
 import { useState } from "react";
 
@@ -28,7 +28,7 @@ const NavMenu = () => {
       >
         <ul className="links">
           <li>
-            <NavLink to="/" exact onClick={showLinkHandler}>
+            <NavLink to="/landing" onClick={showLinkHandler}>
               Home
             </NavLink>
           </li>

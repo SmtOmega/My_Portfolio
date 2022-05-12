@@ -1,6 +1,8 @@
 import headerImg from "../assets/images/header.jpg";
 import { v4 as uuidv4 } from "uuid";
 
+
+
 export const dummyData = [
   {
     id: uuidv4(),
@@ -45,3 +47,5 @@ export const dummyData = [
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam consectetur ducimus sequi quo excepturi",
   },
 ];
+
+

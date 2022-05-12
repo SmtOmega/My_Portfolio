@@ -62,7 +62,7 @@ textarea {
 }
 
 .form-btn {
-    border: 1px solid rgb(255, 115, 0);
+    border: 1px solid #ff7300;
     border-radius: 5px;
     background-color: transparent;
     text-transform: capitalize;

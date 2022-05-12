@@ -1,10 +1,13 @@
 import { MdEmail, MdPhone, MdPlace } from "react-icons/md";
 import ContactForm from "../components/ContactForm";
+import FooterSection from "../components/FooterSection";
+import NavMenu from "../components/NavMenu";
 import "../css/ContactPage.css";
 
 const Contact = () => {
   return (
     <div>
+      <NavMenu />
       <div className="contact-container">
         <h1>Contact</h1>
         <div className="contact-page-container">
@@ -39,6 +42,7 @@ const Contact = () => {
           </section>
         </div>
       </div>
+      <FooterSection />
     </div>
   );
 };

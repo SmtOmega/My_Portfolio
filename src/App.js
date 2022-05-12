@@ -1,37 +1,42 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import FooterSection from "./components/FooterSection";
-import NavMenu from "./components/NavMenu";
 import About from "./pages/AboutPage";
 import Contact from "./pages/Contact";
+import AddProject from "./pages/Dashboard/AddProject";
+import AllProject from "./pages/Dashboard/AllProject";
+import SharedLayout from "./pages/Dashboard/SharedLayout";
 import Home from "./pages/Home";
+import LoginPage from "./pages/LoginPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Project from "./pages/Project";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 function App() {
+  
   return (
     <>
-      <Router>
-        <NavMenu />
-        <Switch>
-          <Route path="/" exact>
-            <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <SharedLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route index element={<AllProject />} />
+            <Route path="add-project" element={<AddProject />} />
           </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Project />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path='/policy'>
-            <PrivacyPolicyPage />
-          </Route>
-        </Switch>
-        <FooterSection />
-      </Router>
+          <Route path="/landing" element={<Home />} />
+          <Route path="/about" element={<About />} />
+
+          <Route path="/projects" element={<Project />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/policy" element={<PrivacyPolicyPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
