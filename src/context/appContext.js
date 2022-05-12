@@ -56,7 +56,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const publicUrl = process.env.REACT_APP_PUBLIC_URL
-  console.log(publicUrl)
+  
 
   const authFetch = axios.create({
     baseURL: `${publicUrl}/api/v1`,
